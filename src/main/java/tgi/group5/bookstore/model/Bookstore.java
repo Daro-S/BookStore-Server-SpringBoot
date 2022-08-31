@@ -1,7 +1,6 @@
 package tgi.group5.bookstore.model;
 
 import java.io.Serializable;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -28,9 +27,10 @@ public class Bookstore implements Serializable{
     private String name;
     private String description;
     private String image;
-    private int categoryId;
+    private String category;
     private int rating;
     private String isAvailable;
+    private float price;
     @Column(nullable = false, updatable = false)
     private String isbn;
 }
